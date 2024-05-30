@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StickyNoteApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/lightSky</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorAccent">@color/darkBlue</item>
+    </style>
+
+    <style name="Theme.StickyNoteApp" parent="Base.Theme.StickyNoteApp" />
+    <style name="Base.Theme.StickyNoteApps" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/lightSky</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorAccent">@color/darkBlue</item>
+    </style>
+    <style name="Theme.StickyNoteApps" parent="Base.Theme.StickyNoteApps" />
+    
+
+</resources>
