@@ -77,6 +77,7 @@ class EditFragment : Fragment() {
             subTitle = subTitle,
             note = note,
             date = dateTimeString)
+
             viewModel.updateNote(data)
 
 
