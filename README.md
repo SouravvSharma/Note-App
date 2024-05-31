@@ -5,12 +5,12 @@
 
 **Add Screen** <br>
 
-<img src="https://github.com/SouravvSharma/QuoteApp/assets/163539928/8de6f0ca-0428-47c3-9c85-0571b0b47fde"  alt="GitHub Logo"width="400" height="800"/>
+<img src="https://github.com/SouravvSharma/QuoteApp/assets/163539928/8de6f0ca-0428-47c3-9c85-0571b0b47fde" alt="Add Screen"width="400" height="800"/>
 
 **Edit Screen** <br>
 
-<img src="(https://github.com/SouravvSharma/QuoteApp/assets/163539928/b091d180-4f12-4638-aa9a-b9da974d0988" alt="GitHub Logo" width="400" height="800"/>
+<img src="https://github.com/SouravvSharma/QuoteApp/assets/163539928/b091d180-4f12-4638-aa9a-b9da974d0988" alt="GitHub Logo" width="400" height="800"/>
 
 **Delete Screen** <br>
-<img src="https://github.com/SouravvSharma/QuoteApp/assets/163539928/36324c6a-3042-4ad0-988c-2f343604c6f9" alt="GitHub Logo"width="400" height="800"/>
+<img src="[https://github.com/SouravvSharma/QuoteApp/assets/163539928/36324c6a-3042-4ad0-988c-2f343604c6f9](https://github.com/SouravvSharma/QuoteApp/assets/163539928/36324c6a-3042-4ad0-988c-2f343604c6f9)" alt="GitHub Logo"width="400" height="800"/>
 
