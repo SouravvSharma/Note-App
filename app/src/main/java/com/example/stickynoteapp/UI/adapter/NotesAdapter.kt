@@ -5,35 +5,32 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.stickynoteapp.MainActivity
+import com.example.stickynoteapp.R
 import com.example.stickynoteapp.UI.fragments.HomeFragment
 import com.example.stickynoteapp.UI.fragments.HomeFragmentDirections
 import com.example.stickynoteapp.databinding.NoteItemBinding
 import com.example.stickynoteapp.model.Notes
 import com.example.stickynoteapp.viewModel.NotesViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 
 class NotesAdapter(private val context: Context, private var noteList: List<Notes>) :RecyclerView.Adapter<NotesAdapter.NotesViewHolder>() {
-    //private var  viewModel = NotesViewModel(Application())
+    private var  viewModel =  NotesViewModel(Application())
 
-
-//    private fun showDeleteConfirmationDialog(note: Notes) {
-//        AlertDialog.Builder(context)
-//            .setTitle("Delete")
-//            .setMessage("Do you really want to delete this item?")
-//            .setPositiveButton("Yes") { _, _ ->
-//                viewModel.deleteNote(note)
-//
-//            }
-//            .setNegativeButton("NO") { dialog, _ ->
-//                dialog.dismiss()
-//            }
-//            .show()
-//    }
     fun filteredList(newArrayFilteredList: ArrayList<Notes>) {
         noteList = newArrayFilteredList
         notifyDataSetChanged()
@@ -72,10 +69,28 @@ class NotesAdapter(private val context: Context, private var noteList: List<Note
             Navigation.findNavController(it).navigate(action)
         }
 
-//        holder.binding.root.setOnLongClickListener {
-//            showDeleteConfirmationDialog(data)
-//
-//            true // indicate event is consumed
-//        }
+        holder.binding.root.setOnLongClickListener {
+            val bottomSheet = BottomSheetDialog(context)
+            bottomSheet.setContentView(R.layout.delete_alert_box)
+            bottomSheet.show()
+            val textNo = bottomSheet.findViewById<TextView>(R.id.noText)
+            val textYes = bottomSheet.findViewById<TextView>(R.id.yesText)
+
+            textNo?.setOnClickListener {
+                bottomSheet.dismiss()
+            }
+            textYes?.setOnClickListener {
+                runBlocking{
+                    viewModel.deleteNote(data)
+                    Toast.makeText(context, "Note deleted successfully", Toast.LENGTH_LONG)
+                        .show()
+                }
+                bottomSheet.dismiss()
+            }
+            notifyDataSetChanged()
+            true // indicate event is consumed
+        }
     }
+
+
 }

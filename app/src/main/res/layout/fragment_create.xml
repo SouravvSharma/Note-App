@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBlack"
     tools:context=".UI.fragments.CreateFragment">
 
     <LinearLayout
@@ -17,8 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Title.."
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:maxLines="1"
-
             android:background="@drawable/custome_bg"
             android:padding="16dp"
             android:layout_marginTop="10dp"/>
@@ -27,6 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="subtitle"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:maxLines="1"
             android:background="@drawable/custome_bg"
             android:padding="16dp"
@@ -36,7 +40,9 @@
             android:id="@+id/cNote"
             android:layout_width="match_parent"
             android:layout_height="350dp"
+            android:textColorHint="@color/black"
             android:hint="Note"
+            android:textColor="@color/black"
             android:gravity="start"
             android:background="@drawable/custome_bg"
             android:padding="16dp"

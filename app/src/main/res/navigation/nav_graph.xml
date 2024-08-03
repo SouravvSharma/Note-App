@@ -23,6 +23,8 @@
         android:label="Add Notes"
         tools:layout="@layout/fragment_create" >
         <action
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
             android:id="@+id/action_createFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
@@ -32,6 +34,8 @@
         android:label="Edit Note"
         tools:layout="@layout/fragment_edit" >
         <action
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
             android:id="@+id/action_editFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <argument

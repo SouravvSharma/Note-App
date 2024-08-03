@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightSky">#34ECEC</color>
-    <color name="darkBlue">#37B5ED</color>
     <color name="red">#D50909</color>
     <color name="lightGrey">#FFAAAAAA</color>
+    <color name="lightBlack">#707070</color>
 </resources>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/lightBlack"
     android:paddingEnd="5dp"
     android:paddingStart="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -25,6 +26,7 @@
                 android:id="@+id/notesTitle"
                 android:textStyle="bold"
                 android:textSize="18sp"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="titahfd;hds;fh;faksh;"/>
@@ -35,12 +37,14 @@
                 android:textSize="15sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/lightBlack"
                 android:text="note content (asdhglkahsdfkasdfkhadslkfhklasdhflkashdfklhas)"/>
             <TextView
                 android:id="@+id/notesDate"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="date and time"/>

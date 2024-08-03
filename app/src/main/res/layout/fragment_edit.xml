@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBlack"
     android:orientation="vertical"
     tools:context=".UI.fragments.CreateFragment">
 
@@ -21,7 +22,9 @@
             android:background="@drawable/custome_bg"
             android:hint="Title.."
             android:maxLines="1"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/eNsubTitle"
@@ -31,7 +34,9 @@
             android:background="@drawable/custome_bg"
             android:hint="subtitle"
             android:maxLines="1"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/eNote"
@@ -41,7 +46,9 @@
             android:background="@drawable/custome_bg"
             android:gravity="start"
             android:hint="Note"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
 
     </LinearLayout>

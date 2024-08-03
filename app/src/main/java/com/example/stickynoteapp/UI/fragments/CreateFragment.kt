@@ -64,7 +64,7 @@ class CreateFragment : Fragment(R.layout.fragment_create) {
             date = dateTimeString
         )
         viewModel.addNote(data)
-        Toast.makeText(requireContext(), "Notes saved successfully", Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), "Note saved successfully", Toast.LENGTH_SHORT).show()
         Navigation.findNavController(requireView())
             .navigate(R.id.action_createFragment_to_homeFragment)
 

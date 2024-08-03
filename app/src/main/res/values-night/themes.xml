@@ -2,14 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.StickyNoteApp" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/lightSky</item>
-        <item name="colorSecondaryVariant">@color/red</item>
-        <item name="colorAccent">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/lightSky</item>
+        <item name="colorSecondaryVariant">@color/lightSky</item>
+        <item name="colorAccent">@color/red</item>
     </style>
 
     <style name="Base.Theme.StickyNoteApps" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/lightSky</item>
-        <item name="colorSecondaryVariant">@color/red</item>
-        <item name="colorAccent">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/lightSky</item>
+        <item name="colorSecondaryVariant">@color/lightSky</item>
+        <item name="colorAccent">@color/red</item>
     </style>
     <style name="Theme.StickyNoteApps" parent="Base.Theme.StickyNoteApps" />
 </resources>

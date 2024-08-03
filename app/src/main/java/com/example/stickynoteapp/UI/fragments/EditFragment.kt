@@ -58,7 +58,7 @@ class EditFragment : Fragment() {
     }
 
 
-    private suspend fun updateNote(it: View?) {
+    private fun updateNote(it: View?) {
 
         val title = binding.eNTitle.text.toString()
         val subTitle = binding.eNsubTitle.text.toString()
@@ -109,6 +109,7 @@ class EditFragment : Fragment() {
             textYes?.setOnClickListener {
                runBlocking {
                    viewModel.deleteNote(oldNote.data)
+                   Toast.makeText(requireContext(),"Note deleted successfully",Toast.LENGTH_LONG).show()
                }
                 bottomSheet.dismiss()
                 Navigation.findNavController(requireView()).navigate(R.id.action_editFragment_to_homeFragment)
